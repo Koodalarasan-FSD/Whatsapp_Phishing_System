@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Report Page</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  </head>
+  <body>
+    <img src="{% static 'images/wave.png' %}" alt="" class="wave" />
+
+    <div class="container">
+      <div class="img">
+        <img src="{% static 'images/bg.svg' %}" alt="" />
+      </div>
+
+      <div class="content">
+        <form method="post" action="{% url 'generate_download_report' %}"> 
+          {% csrf_token %}
+          <img src="{% static 'images/avatar.svg' %}" alt="" />
+          <h2 class="title">Admin_Report</h2>
+
+          <input type="submit" value="Generate & Download Report" class="btn" />
+        </form>
+      </div>
+    </div>
+
+    <script src="{% static 'js/app.js' %}"></script>
+  </body>
+</html>

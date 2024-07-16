@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+
+    <!--font awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!--css file-->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+  </head>
+  <body>
+    <img src="{% static 'images/wave.png' %}" alt="" class="wave" />
+
+    <div class="container">
+      <div class="img">
+        <img src="{% static 'images/bg.svg' %}" alt="" />
+      </div>
+
+      <div class="content">
+        <form method="post" action="{% url 'login_submit'%}"> 
+          {% csrf_token %}
+          <img src="{% static 'images/avatar.svg' %}" alt="" />
+          <h2 class="title">Welcome</h2>
+
+          <div class="inputbox name">
+            <div class="icon">
+              <i class="fas fa-user"></i>
+            </div>
+
+            <div class="box">
+              <h5>Username</h5>
+              <input type="text" class="input"  />
+            </div>
+          </div>
+
+          <div class="inputbox pass">
+            <div class="icon">
+              <i class="fas fa-lock"></i>
+            </div>
+
+            <div class="box">
+              <h5>Password</h5>
+              <input type="password" class="input" />
+              <input type="hidden" value="{{id}}" name="id">
+            </div>
+          </div>
+
+          <a href="#">Forgot Password?</a>
+
+          <input type="submit" value="Login" class="btn" />
+        </form>
+      </div>
+    </div>
+
+    <script src="{% static 'js/app.js' %}"></script>
+  </body>
+</html>
