@@ -28,4 +28,4 @@ This project simulates a phishing system to demonstrate the security vulnerabili
         http://127.0.0.1:8000/login/<unique_id>/
        Replace <unique_id> with the actual unique integer ID (e.g., 3).
     3. Paste the link in the browser or send it as a WhatsApp message if required.
-    4. Follow the requirements to ensure the project executes perfectly.
+    4. Follow the requirements in whatsapp phishing System (1).pdf to ensure the project executes perfectly.
