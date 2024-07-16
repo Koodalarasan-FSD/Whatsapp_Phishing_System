@@ -1,5 +1,5 @@
 # Whatsapp_Phishing_System
-This project/task implements a WhatsApp Phishing System using the Django framework and MySQL database. The frontend technologies used are HTML, CSS, and JavaScript. For report generation, the document and python-docx Python packages are utilized.
+This project/task implements **WhatsApp Phishing System** using **the Django framework** and **MySQL database**. The frontend technologies used are **HTML**, **CSS**, and **JavaScript**. For **report generation**, Python packages such as **document** and **python-docx**  are utilized.
 
 ## Table of Contents
 - [Project Description](#project-description)
@@ -16,6 +16,8 @@ This project simulates a phishing system to demonstrate the security vulnerabili
   - **Database**: MySQL
   - **Frontend**: HTML, CSS, JavaScript
   - **Report Generation**: document, python-docx Python packages
+  - <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="HTML5" width="40" height="40"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="CSS3" width="40" height="40"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="40" height="40"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="40" height="40"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" width="40" height="40"/><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="40" height="40"/>
+  
 
 ## Installation Prerequisites
   - **Python 3.x**
